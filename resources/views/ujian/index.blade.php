@@ -17,6 +17,13 @@
 </head>
 
 <body>
+
+    @if (session()->get('kunci'))
+        <div class="alert alert-success">
+            {{ session()->get('kunci') }}
+        </div>
+    @endif
+
     <div class="container">
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
