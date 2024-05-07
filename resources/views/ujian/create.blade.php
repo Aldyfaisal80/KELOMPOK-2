@@ -27,6 +27,11 @@
                                 class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
                                 alt="Sample photo">
                             <div class="card-body p-4 p-md-5">
+                                @if (Session::has('kunci'))
+                                    <div>
+                                        <h1 class="fs-1">{{ session('kunci') }}</h1>
+                                    </div>
+                                @endif
                                 <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Form Data Siswa Baru</h3>
 
                                 <form class="px-md-2" method="POST" action="">
@@ -52,8 +57,8 @@
                                         <label class="form-label" for="form3Example1q">Semester</label>
                                     </div>
                                     <button type="submit" data-mdb-button-init data-mdb-ripple-init
-                            class="btn btn-success btn-lg mb-1">Submit</button>
-                        </form>
+                                        class="btn btn-success btn-lg mb-1">Submit</button>
+                                </form>
 
                             </div>
                         </div>

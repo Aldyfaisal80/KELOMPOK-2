@@ -14,6 +14,6 @@ class UTSController extends Controller
 
     public function store(Request $request)
     {
-    dd($request);
+        return redirect('/uts/create')->with('kunci', 'data mahasiswa berhasil ditambahkan');
     }
 }
