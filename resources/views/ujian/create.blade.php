@@ -37,8 +37,8 @@
                                 <form class="px-md-2" method="POST" action="">
                                     @csrf
                                     <div data-mdb-input-init class="form-outline mb-4">
-                                        <input type="text" id="form3Example1q" class="form-control" id="kontol"
-                                            name="kontol" />
+                                        <input type="text" id="form3Example1q" class="form-control" id="form-control"
+                                            name="name" />
                                         <label class="form-label" for="form3Example1q">Name</label>
                                     </div>
                                     `
